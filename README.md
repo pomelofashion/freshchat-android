@@ -1,29 +1,20 @@
 ## Freshchat Android SDK
 
-## First time integration 
-### [Integration Guide](https://support.freshchat.com/support/solutions/articles/50000000207)
+## How to publish?
+We host this library internally using [GitHub Packages](https://github.com/features/packages)
 
-#### Quick Steps
-Project gradle file **build.gradle**
+#### 1. Setup variables for GitHub Packages
+
+To connect with GitHub Packages, you need to add these properties in `local.properties` as follows:
 ```
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-}
+gpr.user=YOUR_GITHUB_USERNAME
+gpr.key=YOUR_PERSONAL_ACCESS_TOKEN
+artifact.version=x.x.x
 ```
+Please make sure your personal access token has `write:packages` access.
 
-App Module gradle file **(app/build.gradle)** 
-```
-dependencies {
-    implementation 'com.github.freshdesk:freshchat-android:{latestVersion}'
-}
-```
+#### 2. Run the following command
+`./gradlew assembleRelease publish`
 
-## Updating to newer versions of SDK
-### [Changelog](https://github.com/freshdesk/freshchat-android/blob/master/CHANGELOG.md)
-
-
-## Contact us
-For any issues, queries or feature request, please reach out to us through support@freshchat.com
+#### 3. Check the artifact
+The new artifact will be published in [our main repository](https://github.com/orgs/pomelofashion/packages?repo_name=mobile-android)
