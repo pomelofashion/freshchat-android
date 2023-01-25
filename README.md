@@ -9,7 +9,6 @@ To connect with GitHub Packages, you need to add these properties in `local.prop
 ```
 gpr.user=YOUR_GITHUB_USERNAME
 gpr.key=YOUR_PERSONAL_ACCESS_TOKEN
-artifact.version=x.x.x
 ```
 Please make sure your personal access token has `write:packages` access.
 

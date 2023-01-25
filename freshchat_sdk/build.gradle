@@ -56,6 +56,7 @@ android {
 
 publishing {
     Properties properties = localProperties()
+    String artifactVersion = android.defaultConfig.versionName
     repositories {
         maven {
             name = "GitHubPackages"
@@ -70,7 +71,7 @@ publishing {
         aar(MavenPublication) {
             groupId = 'com.pomelofashion'
             artifactId = 'freshchat-android'
-            version = properties["artifact.version"]
+            version = artifactVersion
             artifact('build/outputs/aar/freshchat_sdk-release.aar')
         }
     }
