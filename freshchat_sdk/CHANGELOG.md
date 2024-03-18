@@ -1,3 +1,120 @@
+## 6.2.0(2024-03-14)
+
+### Feature :
+* Added support for Parallel conversations.
+
+## 6.1.5(2024-02-13)
+* Fix for Agent first name display issue when bot conversations are assigned to an agent.
+
+## 6.1.2(2024-01-11)
+
+### Bug fix :
+* Fix for potential ANR during app update.[CHANGELOG.md](..%2Fdist%2FCHANGELOG.md)
+* Fix for bot not retriggering after resolving bot conversations.
+* Fix for a crash happening while loading conversations.
+* Fix for agent name is not updated when any bot conversations are assigned to any agent.
+ 
+## 6.1.1(2024-1-5) 
+
+### Bug fix :
+* Fix to enable text input editor when using Freshchat Public APIs to send messages on behalf of an agent/bot.
+
+## 6.1.0(2023-11-17)
+
+### Feature :
+* We are adding support for multi-select Carousel as a new input type for your customers. Customers will now be able to pick and choose multiple choices that appears as a series of options with a horizontal scroll (carousel) on the screen.
+
+### Bug Fix :
+* Fix for hyper links not scrolling to the desired index in FAQ webview in omni account
+* Fix for HTML code is being displayed in carousels primary & secondary buttons
+* Fix for conversation is not loading for Android Gradle Plugin 8.0 consumers
+
+## 6.0.0(2023-10-09)
+
+### Enhancement :
+* Performance improvement on loading messages
+
+## 5.9.6(2023-10-06)
+
+### Bug fix :
+* Fix for bot variables not being set for resolved conversations.
+
+## 5.9.5(2023-09-15)
+
+### Bug fix :
+* Fix for a crash which occurs during certain chat flows.
+
+## 5.9.3(2023-08-28)
+
+### Enhancement :
+* Handle disabling of reply editor when bot response is pending.
+
+## 5.9.2(2023-07-08)
+
+### Feature :
+* We are adding support for multi-select as a new input type for your customers. Customers will now be able to pick and choose multiple choices that appears as buttons.
+
+### Enhancements :
+* Update UI for single select button.
+
+## 5.9.1(2023-07-05)
+
+### Bug Fix
+* Fix for Otp timer not shown
+
+## 5.9.0(2023-06-29)
+
+### Feature
+* This version will now let you receive star-based feedback from your customers. Customers will be able to provide feedback from a maximum of 5 star based choices.
+* We are adding support for Date and time as a new input type for your customers. Customers will now be able to pick a date and pick a time within the bot flow.
+* We are adding support for Multi-select as a new input type for your customers. Customers will now be able to pick and choose multiple choices that appears as a dropdown.
+
+## 5.8.0(2023-06-20)
+
+### Feature
+* We are adding support for Phone number and OTP as a new input type for your customers. Customers will now be able to enter their phone numbers with country code to generate an OTP which is then entered by user and is accepted by the SDK to process user information.
+
+
+## 5.7.0(2023-06-15)
+
+### Feature
+* You will now be able to pass custom user properties related to a user conversation from the mobile app to the bots via the SDK
+
+## 5.6.0(2023-06-08)
+
+### Feature
+* This version will now let you receive feedback from your customers in the form of a text. Customers will be able to type their feedback if configured in the bot flow.
+* This version will now let you receive feedback from your customers in the form of a preset choices. Customers will be able to choose their feedback from a maximum 3 choices.
+
+## 5.5.3(2023-06-01)
+
+### Bug Fixes
+* Fix spaces in multiline bot messages with paragraph tag.
+
+## 5.5.2(2023-05-04)
+
+### Bug Fixes
+* Fix for bot not being triggered when user responds to CSAT
+* Fix for locale change not being reflected in topics screen
+
+## 5.5.1(2023-04-13)
+
+### Bug Fixes
+* Fix for HTML tags not supported in carousel title and subtitle.
+* Fix for multiple selection of Dropdown options.
+
+## 5.5.0(2023-03-27)
+
+### Feature
+* Placeholder support for bot messages
+
+### Enhancement
+* Display links configured for bot articles
+
+### Bug Fixes
+* Fix for multiple selection of quick reply buttons
+* Fix for displaying blank topic name in topic list screen
+
 ## 5.4.2(2023-03-06)
 
 ### Bug Fixes

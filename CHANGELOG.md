@@ -1,3 +1,69 @@
+## 5.9.2(2023-07-08)
+
+### Feature :
+* We are adding support for multi-select as a new input type for your customers. Customers will now be able to pick and choose multiple choices that appears as buttons.
+
+### Enhancements :
+* Update UI for single select button.
+
+## 5.9.1(2023-07-05)
+
+### Bug Fix
+* Fix for Otp timer not shown
+
+## 5.9.0(2023-06-29)
+
+### Feature
+* This version will now let you receive star-based feedback from your customers. Customers will be able to provide feedback from a maximum of 5 star based choices.
+* We are adding support for Date and time as a new input type for your customers. Customers will now be able to pick a date and pick a time within the bot flow.
+* We are adding support for Multi-select as a new input type for your customers. Customers will now be able to pick and choose multiple choices that appears as a dropdown.
+
+## 5.8.0(2023-06-20)
+
+### Feature
+* We are adding support for Phone number and OTP as a new input type for your customers. Customers will now be able to enter their phone numbers with country code to generate an OTP which is then entered by user and is accepted by the SDK to process user information.
+
+
+## 5.7.0(2023-06-15)
+
+### Feature
+* You will now be able to pass custom user properties related to a user conversation from the mobile app to the bots via the SDK
+
+## 5.6.0(2023-06-08)
+
+### Feature
+* This version will now let you receive feedback from your customers in the form of a text. Customers will be able to type their feedback if configured in the bot flow.
+* This version will now let you receive feedback from your customers in the form of a preset choices. Customers will be able to choose their feedback from a maximum 3 choices.
+
+## 5.5.3(2023-06-01)
+
+### Bug Fixes
+* Fix spaces in multiline bot messages with paragraph tag.
+
+## 5.5.2(2023-05-04)
+
+### Bug Fixes
+* Fix for bot not being triggered when user responds to CSAT
+* Fix for locale change not being reflected in topics screen
+
+## 5.5.1(2023-04-13)
+
+### Bug Fixes
+* Fix for HTML tags not supported in carousel title and subtitle.
+* Fix for multiple selection of Dropdown options.
+
+## 5.5.0(2023-03-27)
+
+### Feature
+* Placeholder support for bot messages
+
+### Enhancement
+* Display links configured for bot articles
+
+### Bug Fixes
+* Fix for multiple selection of quick reply buttons
+* Fix for displaying blank topic name in topic list screen
+
 ## 5.4.2(2023-03-06)
 
 ### Bug Fixes

@@ -41,13 +41,25 @@
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/freshchat_conv_detail_list"
-                style="?attr/freshchatMessageListStyle"
+            <RelativeLayout
+                android:id="@+id/freshchat_conv_detail_root_layout"
                 android:layout_width="match_parent"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="1">
+
+                <com.freshchat.consumer.sdk.util.FreshchatRecyclerView
+                    android:id="@+id/freshchat_conv_detail_list"
+                    style="?attr/freshchatMessageListStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                <Button
+                    android:id="@+id/freshchat_new_messages_count_btn"
+                    style="?attr/freshchatNewMessageBubbleStyle"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
 
             <include
                 android:id="@+id/freshchat_invalid_input_message"
@@ -56,9 +68,45 @@
                 android:layout_height="wrap_content"
                 android:visibility="gone" />
 
+            <include
+                android:id="@+id/freshchat_count_tracker_container"
+                layout="@layout/freshchat_quick_reply_count_tracker"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/freshchat_quick_reply_count_tracker_bg"
+                />
+
+             <include
+                android:id="@+id/freshchat_resend_otp_button"
+                layout="@layout/freshchat_resend_otp_layout"
+                android:elevation="@dimen/freshchat_message_composer_elevation"
+                android:focusable = "false"
+                android:clickable = "true"
+                android:focusableInTouchMode = "false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/freshchat_multiselect_carousel_frame"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentBottom="true"
+                tools:visibility="gone" />
+            />
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="70dp"
+                android:layout_below = "@id/freshchat_conv_detail_root_layout"
                 android:elevation="@dimen/freshchat_message_composer_elevation"
                 android:visibility="gone"
                 android:id="@+id/freshchat_quick_reply_container"
@@ -76,8 +124,59 @@
                     android:paddingStart="12dp"
                     app:freshchatFlChildSpacing="@dimen/freshchat_quick_reply_view_row_padding"
                     app:freshchatFlChildSpacingForLastRow="align"
+                    android:splitMotionEvents="false"
                     app:freshchatFlRowSpacing="@dimen/freshchat_quick_reply_view_column_padding" />
             </ScrollView>
+            <include
+                layout="@layout/freshchat_bot_calendar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <include
+                layout="@layout/freshchat_bot_time_picker_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/opinion_feedback"
+                android:visibility="gone">
+                <include
+                    layout="@layout/freshchat_opinion_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+            <ScrollView
+                android:id="@+id/rating_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <include
+                    layout="@layout/freshchat_rating_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </ScrollView>
+
+
+            <include
+                android:id="@+id/botFeedBackThanksMessage"
+                layout="@layout/freshchat_thanks_feedback_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_above="@+id/freshchat_conv_detail_upload_attachment_layout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
         </LinearLayout>
 
         <View
@@ -101,6 +200,7 @@
             android:visibility="gone"
             tools:visibility="visible" />
 
+
         <include
             layout="@layout/freshchat_partial_add_attachment_frame"
             android:layout_width="match_parent"
@@ -113,7 +213,6 @@
             android:layout_alignParentRight="true"
             android:visibility="gone"
             tools:visibility="visible" />
-        />
 
 
         <include
@@ -176,6 +275,7 @@
             android:layout_alignParentBottom="true"
             android:visibility="gone"
             android:layout_width="match_parent" />
+
     </RelativeLayout>
 
 </RelativeLayout>

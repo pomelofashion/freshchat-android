@@ -48,6 +48,7 @@
 	<string name="freshchat_content_description_upload_status">Message upload Status</string>
 	<string name="freshchat_content_description_show_original_content">Show Original</string>
 	<string name="freshchat_content_description_hide_original_content">Hide Original</string>
+	<string name="freshchat_content_description_upload_status_success">Message uploaded Successfully</string>
 
 	<!-- Error messages -->
 	<string name="freshchat_error_send_message_when_no_internet">Oops, no internet connection! Message will be sent when you reconnect.</string>
@@ -151,7 +152,9 @@
 	<string name="freshchat_all_members_away_message">We are away now</string>
 
 	<!--Strings for Drop down messages-->
-	<string name="freshchat_drop_down_hint_text">Click here to select</string>
+	<string name="freshchat_drop_down_hint_text">Select an option</string>
+	<string name="freshchat_multi_select_drop_down_hint_text">Select all that apply</string>
+	<string name="freshchat_multi_select_button_hint_text">Select response</string>
 
 	<!--Strings for Carousel -->
 	<string name="freshchat_carousel_default_preview_text">Choose an option</string>
@@ -160,6 +163,10 @@
 	<string name="freshchat_carousel_card_default_callback_btn_text">Select</string>
 	<string name="freshchat_carousel_card_default_view_btn_text">@string/freshchat_view_text</string>
 	<string name="freshchat_carousel_card_selected_text">Selected</string>
+
+	<!--Strings for MultiSelect Carousel-->
+	<string name="freshchat_submit_btn_text">Submit</string>
+
 
 	<!-- Strings used for Calendar integration -->
 	<string name="freshchat_calendar_find_slot">Find a slot</string>
@@ -193,6 +200,8 @@
 	<string name="freshchat_calendar_meeting_state_pending">Awaiting Confirmation</string>
 	<string name="freshchat_calendar_invite_awaiting_confirmation">Awaiting time slot confirmation</string>
 	<string name="freshchat_calendar_meeting_banner_view_btn">@string/freshchat_view_text</string>
+	<string name="freshchat_bot_calendar_date_select_message">Select date</string>
+	<string name="freshchat_bot_time_select_message">Select time</string>
 
 	<!--Omni KBASE-->
 
@@ -203,8 +212,15 @@
 	<string name="freshchat_no_faq_found">No FAQ found</string>
 	<string name="freshchat_minimum_search_criteria">Enter 3 or more characters to search</string>
 	<string name="freshchat_pagination_error_with_retry">Failed to load. Tap to retry.</string>
-	<string name="freshchat_pagination_no_internet_with_retry">No internet connection. Tap to retry.</string>
 
+	<!-- Conversation Pagination -->
+	<string name="freshchat_new_messages">New Messages</string>
+	<string name="freshchat_loading_more_messages">Loading more...</string>
+	<string name="freshchat_loading_more_messages_failed">Failed to load</string>
+	<plurals name="freshchat_new_messages_count">
+		<item quantity="one">New Message</item>
+		<item quantity="other">@string/freshchat_new_messages</item>
+	</plurals>
 	<!--Bots-->
 	<string name="freshchat_bot_faq_feedback_title">Was this answer useful?</string>
 	<string name="freshchat_bot_faq_feedback_success">Thank you for your Feedback!</string>
@@ -214,7 +230,17 @@
 	<string name="freshchat_input_email_hint">Enter email</string>
 	<string name="freshchat_input_phone_number_hint">Enter phone number</string>
 	<string name="freshchat_input_number_hint">Enter a number</string>
+	<string name="freshchat_input_otp_hint">Enter OTP</string>
+	<string name="freshchat_bot_article_link_text">View full article</string>
+	<string name="freshchat_country_code_title">Select country</string>
+    <string name="freshchat_default_country_code">us</string>
+	<string name="freshchat_resend_otp_with_timer">{{Resend OTP}} in {{Resend OTP timer}}</string>
+	<string name="freshchat_resend_otp_timer_placeholder">{{Resend OTP timer}}</string>
+	<string name="freshchat_resend_otp_placeholder">{{Resend OTP}}</string>
 
+	<!-- Bottomsheet -->
+	<string name="freshchat_bottomsheet_search_hint">Search</string>
+	<string name="freshchat_bottomsheet_no_seach_results">No search results</string>
 
 	<!--Attachments-->
     <string name="freshchat_attachment_send_button">Send</string>
@@ -234,5 +260,20 @@
 	<string name="freshchat_file_size_exceeded_message">Attachments should be smaller than 20 MB</string>
 	<string name="freshchat_spinner_text">Please wait...</string>
 
+    <!--MultiSelect Buttons-->
+    <string name="freshchat_count_tracker_count_text">%d Selected</string>
+	<!--Dropdown-->
+	<string name="freshchat_selected_counter">%1$d Selected</string>
+	<string name="freshchat_deselect_all">Deselect all</string>
+	<string name="freshchat_select_all">Select all</string>
+
+
+	<!--	Feedback-->
+	<string name="freshchat_comment_feedback_hint">Add your feedback here</string>
+	<string name="freshchat_bot_feed_back_thanks_message">Thank you for the feedback</string>
+	<string name="freshchat_character_limit_message">%1$s / %2$s max character limit reached</string>
+	<string name="freshchat_feedback_failure_message">Unable to send feedback. Please try again later</string>
+	<string name="freshchat_opinion_poll_select">Submit</string>
+	<string name="freshchat_rating_feedback_rate_us">Rate us</string>
 
 </resources>
